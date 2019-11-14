@@ -1,0 +1,112 @@
+:root{
+	--colour1:#529b9b;
+	--colour2:#3e4242;
+	--colour3:#343838;
+}
+html,body{
+	margin: 0 auto;
+	padding: 0;
+	min-width:100%;
+	min-height:100%;
+	background-color: gray;
+	color:white;
+}
+body{
+	font-family: Arial;
+	font-size:20px;
+	text-align:center;
+	position:relative;
+	background-image:url("https://www.nationalgeographic.com/content/dam/photography/photos/000/000/6.adapt.1900.1.jpg");
+	background-size:cover;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+h1{
+	font-size:150px;
+}
+h2{
+	font-size:50px;
+}
+h3{
+	font-size:35px;
+}
+#middle{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+	text-align:center;
+	color:white;
+	margin:0 0 40px;
+}
+input[name="username"],input[name="email"],input{
+	font-size:30px;
+	padding:5px 10px;
+	background:none;
+	border:0;
+	border-bottom:3px solid white;
+	color:white;
+	text-align:center;
+	outline: none;
+	max-width: 300px;
+}
+#display_email{
+	display:none;
+}
+#display_main{
+	display:none;
+}
+#btm_bar{
+	text-align:center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+#btm_middle{
+}
+#email_prompt{
+	text-align:center;
+	bottom:0;
+	display:none;
+}
+#email_prompt button{
+	background-color:none;
+	background:none;
+	border-radius:3px;
+	padding:10px;
+	border: 2px solid rgba(255,255,255,0.8);
+	color:white;
+	margin:0 10px;
+	cursor:pointer;
+	outline:none;
+}
+#email_prompt button:hover{
+	background-color:rgba(255,255,255,0.2);
+}
+#display_focus{
+	display:none;
+}
+.focus_msg{
+	font-size:30px;
+}
+#display_quote{
+	display:none;
+}
+#display_quote p{
+	margin:0;
+	padding:10px;
+}
+#quote_msg{
+	font-size:17px;
+}
+#quote_author{
+	font-size:13px;
+	display:none;
+}
+#quote_msg:hover + #quote_author,#display_quote:hover + #quote_author,#quote_author:hover{
+	display:block;
+}
