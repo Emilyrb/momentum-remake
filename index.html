@@ -7,6 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
+	<div id="top_bar">
+		<div id="top_left">
+
+		</div>
+		<div id="top_middle">
+
+		</div>
+		<div id="top_right">
+			<div id="display_weather">
+				<p id="weather_temp"></p>
+				<p id="weather_loc"></p>
+			</div>
+		</div>
+			
+	</div>
 	<div id="middle">
 		<div id="display_intro">
 			<h3>Hello, what's your name?</h3>
@@ -20,12 +35,14 @@
 
 		<div id="display_main">
 			<h1>TIME</h1>
-			<h2>Good evening, <span class="user"></span></h2>
+			<h2>Good <span class="day_time"></span>, <span class="user"></span></h2>
 			<h3>What is your main focus for today?</h3>
 			<input type="text" name="focus">
 			<div id="display_focus">
 				<h4>TODAY</h4>
-				<span class="focus_msg"></span>
+				<div id="focus">
+					<span class="msg_check">O</span><span class="focus_msg"></span><span class="msg_remove">X</span>
+				</div>
 			</div>
 		</div>
 	</div>

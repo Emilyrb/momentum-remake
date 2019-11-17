@@ -32,9 +32,8 @@ h3{
 	font-size:35px;
 }
 #middle{
-
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -42,6 +41,20 @@ h1{
 	text-align:center;
 	color:white;
 	margin:0 0 40px;
+}
+#top_bar{
+	display:none;
+	padding:10px;
+}
+#top_right{
+	float:right;
+}
+#weather_temp{
+	font-size:20px;
+	margin:0;
+}
+#weather_loc{
+	font-size:15px;
 }
 input[name="username"],input[name="email"],input{
 	font-size:30px;
@@ -92,20 +105,45 @@ input[name="username"],input[name="email"],input{
 }
 .focus_msg{
 	font-size:30px;
+	margin:0 20px;
+}
+.msg_check,.msg_remove{
+	display:none;
+	color:rgba(255,255,255,0.6);
+}
+.msg_check:hover, .msg_remove:hover{
+	cursor:pointer;
+}
+.msg_check:hover{
+	color:rgba(255,255,255,1);
+}
+.msg_remove:hover{
+	background-color:rgba(255,255,255,0.5);
+	border-radius:100%;
+}
+#focus:hover .msg_check,
+#focus:hover .msg_remove,
+.focus_msg:hover + .msg_check,
+.focus_msg:hover + .msg_remove,
+.msg_check:hover,
+.msg_remove:hover{
+	display:inline-block;
 }
 #display_quote{
 	display:none;
 }
 #display_quote p{
 	margin:0;
-	padding:10px;
 }
 #quote_msg{
 	font-size:17px;
+	padding:10px;
 }
 #quote_author{
 	font-size:13px;
 	display:none;
+	color:rgba(255,255,255,0.6);
+	padding:0 0 10px 0;
 }
 #quote_msg:hover + #quote_author,#display_quote:hover + #quote_author,#quote_author:hover{
 	display:block;
