@@ -52,6 +52,7 @@ h1{
 #weather_temp{
 	font-size:20px;
 	margin:0;
+	display:inline-block;
 }
 #weather_loc{
 	font-size:15px;
@@ -110,6 +111,7 @@ input[name="username"],input[name="email"],input{
 .msg_check,.msg_remove{
 	display:none;
 	color:rgba(255,255,255,0.6);
+	font-size:25px;
 }
 .msg_check:hover, .msg_remove:hover{
 	cursor:pointer;
@@ -120,6 +122,29 @@ input[name="username"],input[name="email"],input{
 .msg_remove:hover{
 	background-color:rgba(255,255,255,0.5);
 	border-radius:100%;
+}
+.fa-check-square{
+	display:none;
+}
+.fas.fa-times-circle{
+	display:none;
+}
+.strikethrough{
+	text-decoration:line-through;
+}
+.fa-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.fa-rotate-15 {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
 }
 #focus:hover .msg_check,
 #focus:hover .msg_remove,
