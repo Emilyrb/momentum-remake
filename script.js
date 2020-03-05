@@ -42,7 +42,7 @@ $(document).ready(function(){
 		$(".day_time").html(hours < 12 && hours > 2 ? "morning" : hours > 12 && hours < 17 ? "afternoon": "evening");
     }, 100);
 	
-	var quote_api='http://quotes.rest/qod.json?';
+	var quote_api='https://quotes.rest/qod.json?';
 	var quote_url=quote_api;
 	
 	// Getting JSON data
@@ -55,7 +55,7 @@ $(document).ready(function(){
 	
 	quote_json(quote_url);
 
-	var weather_api='http://api.openweathermap.org/data/2.5/weather?';
+	var weather_api='https://api.openweathermap.org/data/2.5/weather?';
 	var weather_key='&APPID=8c717dcf78dc23081f1047eb61fd3681';
 	var weather_loc='q=Brisbane';
 	var weather_unit = '&units=metric';
